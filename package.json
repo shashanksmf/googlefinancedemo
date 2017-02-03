@@ -23,8 +23,7 @@
     "start": "node server",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint .",
-    "jscs": "jscs .",
-    "postinstall": "webpack -p --config ./webpack.prod.config.js --progress"
+    "jscs": "jscs ."
   },
   "dependencies": {
     "axios": "^0.15.3",
