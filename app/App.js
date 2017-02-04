@@ -47,8 +47,8 @@ export default class App extends React.Component {
       <div className="container-fluid appContainer">
         
         <div className="row">
-            <div>Google Finance Live Data</div>
-            <img src="http://media.cms.bmc.com/binary/bmc_logo_header.svg"/>
+            <div className="heading">Google Finance Live Data</div>
+            <img className="brandImg" src="http://media.cms.bmc.com/binary/bmc_logo_header.svg"/>
         </div>
         
       

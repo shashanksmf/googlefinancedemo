@@ -17,13 +17,13 @@
     padding-top: 10px;  
 }
 
-.appContainer .row img{
+.appContainer .row .brandImg{
     width: 120px;
     float: right;
     padding-top: 7px;
 }
 
-.appContainer .row div{
+.appContainer .row .heading{
     display: inline-block;
     font-size: 36px;
     vertical-align: inherit;
