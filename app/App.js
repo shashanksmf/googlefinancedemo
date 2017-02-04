@@ -44,37 +44,51 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <div className="container-fluid">
-      <div className="row-fluid">Google Finance Live Data</div>
-      <span><b>Standard Deviation : {this.state.deviation}</b></span>
-        <table className="table">
-          <thead>
-            <tr>
-              <th>Index</th>
-              <th>Price</th>
-              <th>Change</th>
-            </tr>
-          </thead>
-          <tbody>
-         {this.state.financeData.length == 0 ? 
-             <tr><td>loading...</td></tr> : ""
-          }
+      <div className="container-fluid appContainer">
         
-          {this.state.financeData.map(function(data){
-            if(data){
-               return (<tr>
-                      <td  dangerouslySetInnerHTML={{ __html: data.symbol }}  ></td>
-                      <td>{data.price}</td>
-                      <td className={parseInt(data.change) >= 0 ? "text-success": "text-danger" }>{data.change} {data.changePer}</td>
-                      
-                    </tr>)
-            }
-          })}
-          
-           
-            </tbody>
-        </table>
+        <div className="row">
+            <div>Google Finance Live Data</div>
+            <img src="http://media.cms.bmc.com/binary/bmc_logo_header.svg"/>
+        </div>
+        
+      
+        
+        <div className="panel panel-default">
+            <div className="panel-heading">
+                <span className="standardDeviation">Standard Deviation : </span>
+                <span>{this.state.deviation}</span>
+        
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>  
+                      <th>Index</th>
+                      <th>Price</th>
+                      <th>Change</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                 
+                    {this.state.financeData.length == 0 ? 
+                     <tr><td>loading...</td></tr> : ""
+                    }
 
+                      {this.state.financeData.map(function(data,index){
+                        if(data){
+                           return (<tr>
+                                  <td>{index + 1}</td> 
+                                  <td  dangerouslySetInnerHTML={{ __html: data.symbol }}  ></td>
+                                  <td>{data.price}</td>
+                                  <td className={parseInt(data.change) >= 0 ? "text-success": "text-danger" }>{data.change} {data.changePer}</td>
+
+                                </tr>)
+                        }
+                      })}
+
+                    </tbody>
+                </table>    
+            </div>
+        </div>
       </div>
     );
   }

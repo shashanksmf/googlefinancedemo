@@ -8,3 +8,7 @@
   background-color: red;
   height: 25px;
 }
+
+.appContainer .row {
+    padding-left: 20px;    
+} 

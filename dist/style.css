@@ -1,0 +1,46 @@
+.app {
+  background-color: green;
+  height: 50px;
+  border: 1px solid blue;
+}
+
+.bap {
+  background-color: red;
+  height: 25px;
+}
+
+.appContainer .row {
+    background-color: cadetblue;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;  
+}
+
+.appContainer .row img{
+    width: 120px;
+    float: right;
+    padding-top: 7px;
+}
+
+.appContainer .row div{
+    display: inline-block;
+    font-size: 36px;
+    vertical-align: inherit;
+}
+
+.appContainer table {
+    margin-top: 10px;
+}
+.appContainer table > thead > tr {
+    background-color: #292b2c;
+    color: white;
+}
+
+.appContainer .table>thead>tr>th {
+    border-bottom: 0px;
+}
+
+.standardDeviation{
+    font-weight: bold;
+}
