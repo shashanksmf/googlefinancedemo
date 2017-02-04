@@ -5,7 +5,7 @@ const express = require('express');
 const webpack = require('webpack');
 var jsdom = require("node-jsdom");
 var fs = require('fs');
-var jquery = fs.readFileSync(path.join(__dirname+"/server/jquery.js"));
+//var jquery = fs.readFileSync(path.join(__dirname+"/server/jquery.js"));
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = isDeveloping ? 3000 : process.env.PORT;
