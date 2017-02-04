@@ -50,7 +50,7 @@ export default class App extends React.Component {
         <table className="table">
           <thead>
             <tr>
-              <th>City</th>
+              <th>Index</th>
               <th>Price</th>
               <th>Change</th>
             </tr>
