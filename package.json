@@ -1,7 +1,7 @@
 {
-  "name": "webpack-express-boilerplate",
+  "name": "googlefinancedemo",
   "version": "0.1.0",
-  "description": "A boilerplate for running a Webpack workflow in Node express",
+  "description": "demoto scrap finance",
   "main": "server.js",
    "engines": {
     "node": "6.9.1"
@@ -12,12 +12,12 @@
     "webpack",
     "node"
   ],
-  "author": "Christian Alfoni",
-  "license": "MIT",
+  "author": "Shashank",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate/issues"
+    "url": "https://github.com/shashanksmf/googlefinancedemo/issues"
   },
-  "homepage": "https://github.com/christianalfoni/webpack-express-boilerplate",
+  "homepage": "https://github.com/shashanksmf/googlefinancedemo",
   "scripts": {
     "test": "",
     "start": "node server",
