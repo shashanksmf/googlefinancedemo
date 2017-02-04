@@ -56,7 +56,10 @@ export default class App extends React.Component {
             </tr>
           </thead>
           <tbody>
-         
+         {this.state.financeData.length == 0 ? 
+             <tr><td>loading...</td></tr> : ""
+          }
+        
           {this.state.financeData.map(function(data){
             if(data){
                return (<tr>
